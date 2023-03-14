@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me?</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: #d3929b;
+    }
+
+    #love {
+        position: absolute;
+        left: 600px;
+        top: 90px;
+        color: #D3929BFF;
+    }
+
+    #noLove {
+        position: absolute;
+        left: 670px;
+        top: 90px;
+        color: #D3929BFF;
+    }
+</style>
+<body>
+<h1> Do you love me?</h1>
+<button id="love" text="button" onclick="YES()">YES</button>
+<button id="noLove" text=button onclick="NO()" onmousemove="NO()">No</button>
+<script>
+    function YES() {
+        document.write('I Love You So Much <3');
+    }
+
+    function NO() {
+        document.getElementById('noLove').value;
+        let height = Math.round(Math.random() * window.innerHeight);
+        let width = Math.round(Math.random() * window.innerWidth);
+        document.getElementById('noLove').style.top = height + 'px';
+        document.getElementById('noLove').style.left = width + 'px';
+    }
+</script>
+</body>
+</html>
